@@ -1,0 +1,257 @@
+/** NAVIGATION MENUS **/
+
+
+.notifications, 
+.unreadConversations, 
+.moreMenu {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+/** MENUS **/
+.profileMenu {
+    width: 118%;
+}
+
+#scdx__link {
+    color: #177FFF !important;
+}
+
+.header__collection-wrapper {
+    display: none;
+}
+
+.header__navMenuItem {
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-top: 8px !important;
+    margin: 5px !important;
+    height: 35px !important;
+    border: none !important;
+    transition: background-color .1s, border-radius .5s;
+}
+
+.header__navMenuItem:hover {
+    background-color: #177FFF !important;
+    border-radius: 2px;
+}
+
+.header__navMenuItem.selected {
+    background-color: #177FFF !important;
+    border-radius: 2px !important;
+}
+
+.commentsList__item {
+    border-radius: 10px;
+    background-color: rgba(0,0,30,.05);
+    margin: 10px;
+    padding-left: 12px;
+    overflow-x: hidden;
+}
+
+.commentItem.m-isReply.m-creatorComment {
+    background-color: rgba(0,0,0,.03);
+    border-radius: 5px;
+    margin-left: 20px !important;
+}
+
+.commentItem__avatar {
+    border: 4px solid rgba(255,255,255,.5);
+    border-radius: 3px;
+}
+
+.commentForm__avatar {
+
+}
+
+.commentItem.m-isReply {
+    padding-left: 10px;
+    border-left: 4px dotted rgba(0,0,0,.07);
+}
+
+.commentItem.m-isReply.m-creatorComment {
+    border-left: 4px dotted rgba(0,0,0,.2);
+}
+
+.commentForm__wrapper {
+    border-radius: 6px;
+}
+
+.image.m-user {
+    box-shadow: -2px 2px 2px rgba(0,0,0,.05);
+}
+
+.image.ownActivity__trackImg span{
+    opacity: 1 !important;
+    border-radius: 3px !important;
+}
+
+.commentForm__avatar .sc-artwork{
+    box-sizing: border-box;
+    border-radius: 0px !important;
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.fullListenHero {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ownActivitiesList__item {
+    background-color: rgba(0,0,0,.04);
+    border-radius: 10px;
+    border-bottom: 4px solid rgba(0,0,0,.1);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/**MAIN CONTENT**/
+#content {
+    background-color: white;
+}
+
+body {
+    background-color: white;
+}
+
+/**PROFILE BANNER**/
+.profileHeaderBackground__visual, 
+.profileHeaderBackground, 
+.m-visualLoaded {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.actorUser__username {
+    color: rgba(0,0,0,.2) !important;
+}
+
+.g-type-shrinkwrap-block,
+.g-type-shrinkwrap-inline {
+    border-radius: 4px;
+    text-shadow: -1px 1px 2px rgba(255,255,255,.4);
+}
+
+.playControls__inner {
+    opacity: .90;
+}
+
+.soundActions__purchaseLink {
+    border: 1px solid rgba(0,0,0,.1) !important;
+    padding-top: 2px !important;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: -5px !important;
+    border-radius: 3px;
+    transition: border .01s, background-color .2s, color .2s;
+}
+
+.soundActions__purchaseLink:hover {
+    border: 1px solid rgba(0,0,0,.2) !important;
+    background-color: #177FFF;
+    color: white;
+}
+
+/** CONTROLS SPACING BETWEEN SOUNDS **/
+.sound__body {
+    padding-bottom: 30px;
+    margin-bottom: -55px;
+}
+
+.infoStats__value{
+    color: #177FFF;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.spotlight__recent {
+    color: #177FFF;
+    font-size: 15px;
+    border-top: none;
+    padding-top: 0px;
+}
+
+.sc-button-play {
+    border-radius: 4px !important;
+    transition: border-radius .2s !important;
+}
+
+.sc-button-play:hover {
+    border-radius: 50% !important;
+}
+
+.sc-artwork {
+    border: none !important;
+    border-radius: 3%;
+}
+
+.usersList__item .sc-artwork {
+    box-shadow: -5px 5px 10px rgba(0,0,0,.05);
+}
+
+.header__logo {
+    display: none;
+}
+
+.image.m-sound {
+    box-shadow: 0px 2px 4px rgba(0,0,0,.1);
+}
+
+.inboxItem {
+    margin-right: 11px;
+    padding-bottom: 2px;
+}
+
+.inboxItem.active{
+    border-left: 5px solid ;
+}
+
+.sidebarModule.mobileApps {
+    display: none;
+}
+
+.sc-button {
+    padding-top: 2px;
+}
+
+.header__logo,
+.sc-button,
+.playbackTimeline,
+.statsBadge__today,
+.g-tabs,
+.sc-status-icon,
+.sc-status-icon-creator,
+.commentPopover__wrapper,
+.sc-link-dark, 
+.commentPopover.visible, 
+.commentPopover__username,
+.g-box-full.sceneLayer,
+.notificationIcon,
+.compactTrackListItem__number,
+.compactTrackListItem__content,
+.compactTrackListItem__additional,
+.searchOptions__navigation
+{
+    filter: hue-rotate(200deg);
+}
+
+.searchOptions__navigation {
+    overflow: hidden;
+    border: none;
+}
+
+.searchOptions__footer {
+    border: none !important;
+}
+
+.g-box-full.sceneLayer.waveformCommentsNode {
+    filter: hue-rotate(0deg) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
