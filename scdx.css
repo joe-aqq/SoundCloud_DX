@@ -1,13 +1,29 @@
-/** NAVIGATION MENUS **/
-
-
-.notifications, 
-.unreadConversations, 
-.moreMenu {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.sidebarModule, .infoStats {
+    background-color: rgba(0,0,0,.03);
+    padding: 10px;
+    border-radius: 7px;
+    border-bottom: 3px solid rgba(0,0,0,.1);
+    box-shadow: -3px 3px 6px rgba(0,0,0,.08);
+    min-width: 297px !important;
 }
 
+.web-profiles {
+    border-top: 1px dashed rgba(0,0,0,.2);
+    padding-top: 10px !important;
+}
+
+.truncatedUserDescription__content {
+    background-color: white;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+/** NAVIGATION MENUS **/
+.notifications, 
+.unreadConversations {
+    border-bottom-left-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
 
 /** MENUS **/
 .profileMenu {
@@ -33,6 +49,30 @@
     transition: background-color .1s, border-radius .5s;
 }
 
+/** UPLOAD **/
+.chooseFiles__button {
+    padding-top: 10px !important;
+}
+
+.uploadMain__chooserContainer {
+    border: 2px dashed rgba(0,0,0,.1);
+    border-radius: 25px;
+}
+
+.uploadMain__foot {
+    text-align: center !important;
+}
+
+/************/
+
+.spotlight__recent {
+    font-size: 1px !important;
+    color: white !important;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 2px dashed rgba(0,0,0,.1) !important;
+}
+
 .header__navMenuItem:hover {
     background-color: #177FFF !important;
     border-radius: 2px;
@@ -55,15 +95,6 @@
     background-color: rgba(0,0,0,.03);
     border-radius: 5px;
     margin-left: 20px !important;
-}
-
-.commentItem__avatar {
-    border: 4px solid rgba(255,255,255,.5);
-    border-radius: 3px;
-}
-
-.commentForm__avatar {
-
 }
 
 .commentItem.m-isReply {
@@ -175,22 +206,39 @@ body {
     padding-top: 0px;
 }
 
+.fullHero__foreground {
+    background: linear-gradient(#fff, #ddd) !important;
+}
+
+.fullHero__uploadTime {
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 5px;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    padding-bottom: 2px !important;
+    margin: 2px !important;
+    margin-left: 30px !important;
+    text-align: left;
+    float: right;
+}
+
+.commentPopover__body {
+    color: black;
+}
+
 .sc-button-play {
     border-radius: 4px !important;
-    transition: border-radius .2s !important;
+    transition: opacity .1s !important;
 }
 
 .sc-button-play:hover {
-    border-radius: 50% !important;
+    opacity: .7;
 }
 
 .sc-artwork {
     border: none !important;
     border-radius: 3%;
-}
-
-.usersList__item .sc-artwork {
-    box-shadow: -5px 5px 10px rgba(0,0,0,.05);
 }
 
 .header__logo {
@@ -210,12 +258,16 @@ body {
     border-left: 5px solid ;
 }
 
+.l-footer {
+    opacity: .7;
+}
+
 .sidebarModule.mobileApps {
     display: none;
 }
 
-.sc-button {
-    padding-top: 2px;
+.truncatedUserDescription.m-overflow.m-collapsed .truncatedUserDescription__wrapper::after {
+    background: none !important;
 }
 
 .header__logo,
@@ -234,9 +286,45 @@ body {
 .compactTrackListItem__number,
 .compactTrackListItem__content,
 .compactTrackListItem__additional,
-.searchOptions__navigation
+.searchOptions__navigation,
+.volume__sliderWrapper,
+.sc-label-private
 {
     filter: hue-rotate(200deg);
+}
+
+/** STATS PAGE **/
+.statsSummary__icon,
+.statsBarChart__values,
+.userStatsLegend,
+.topStatsItem__count,
+.m-soundcloud-app .topStatsItem__visual,
+.statsDropbarTabs__tab,
+.premiumProductInfo__feature::before,
+.premiumProductInfo__newBadge,
+.premiumProductInfo__bestValueRibbon,
+.statsLineChart__lines,
+.topStatsFullItem__relativeCountBar,
+.topStatsFullItem__count,
+.g-stats-icon-play
+{
+    filter: hue-rotate(200deg);
+}
+
+.topStatsModule__header {
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+}
+
+.topStatsModule__item:last-child {
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    margin-bottom: 25px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.premierLandingPage__contentTitle::after {
+    display: none;
 }
 
 .searchOptions__navigation {
@@ -248,10 +336,7 @@ body {
     border: none !important;
 }
 
-.g-box-full.sceneLayer.waveformCommentsNode {
-    filter: hue-rotate(0deg) !important;
-}
-
-@media only screen and (max-width: 600px) {
-    
+.g-box-full.sceneLayer.waveformCommentsNode,
+.signinInitialStep__socialButtons {
+    filter: hue-rotate(-200deg) !important;
 }
